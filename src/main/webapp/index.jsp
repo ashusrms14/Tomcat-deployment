@@ -1,27 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page in HTML</title>
+<title>Sample Table</title>
+<style type="text/CSS">
+
+table,td,tr,th
+{
+border : 3px solid red;
+border-collapse:collapse;
+}
+
+caption
+{
+font-size:35px;
+font-weight:bold;
+font-style:italic;
+color=blue;
+}
+
+table
+{
+width:500px;
+height:400px;
+caption-side:top;/*top,bottom*/
+}
+
+tr:nth-child(even)
+{
+background-color:lightGreen;
+}
+
+tr:nth-child(odd)
+{
+background-color:lightblue;
+}
+
+tr:hover
+{
+background-color:orange;
+font-weight:bold;
+font-size:20px;
+}
+</style>
 </head>
 <body>
-    <h1>Login form using HTML and CSS</h1>
-    <form action="">
-        <!-- Headings for the form -->
-        <div class="headingsContainer">
-            <h3>Sign in</h3>
-            <p>Sign in with your username and password</p>
-        </div>
 
-        <!-- Main container for all inputs -->
-        <div class="mainContainer">
-           
-        </div>
+<table>
 
-        </div>
+<caption>Sample Caption</caption>
+<tr>
+<th>S.No</th>
+<th>Name</th>
+<th>Course</th>
+<th>Marks</th>
+</tr>
 
-    </form>
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Shubham</td>
+<td>Javascript</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Ashu</td>
+<td>Java</td>
+<td>95</td>
+</tr>
+
+</table>
+
 </body>
 </html>
