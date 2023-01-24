@@ -9,7 +9,19 @@
 <body>
     <h1>Login form using HTML and CSS</h1>
     <form action="">
-        
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Sign in with your username and password</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+           
+        </div>
+
+        </div>
+
     </form>
 </body>
 </html>
