@@ -56,7 +56,7 @@ font-size:20px;
 
 <tr>
 <td>101</td>
-<td>Ashu</td>
+<td>AshuTosh</td>
 <td>Java</td>
 <td>95</td>
 </tr>
