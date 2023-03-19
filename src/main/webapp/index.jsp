@@ -1,109 +1,70 @@
+
 <html>
 <head>
-<title>Sample Table</title>
-<style type="text/CSS">
+<title>Forms</title>
+<script type="text/javascript">
 
-table,td,tr,th
+function add()
 {
-border : 3px solid red;
-border-collapse:collapse;
+var a=parseInt(f1.t1.value);
+var b=parseInt(f1.t2.value);
+var c=a+b;
+document.getElementById("sample").innerHTML="Addition : "+c;
 }
 
-caption
+function sub()
 {
-font-size:35px;
-font-weight:bold;
-font-style:italic;
-color=blue;
+var a=parseInt(f1.t1.value);
+var b=parseInt(f1.t2.value);
+var c=a-b;
+document.getElementById("sample").innerHTML="Substraction : "+c;
 }
 
-table
+function mul()
 {
-width:500px;
-height:400px;
-caption-side:top;/*top,bottom*/
+var a=parseInt(f1.t1.value);
+var b=parseInt(f1.t2.value);
+var c=a*b;
+document.getElementById("sample").innerHTML="Multiplication : "+c;
 }
 
-tr:nth-child(even)
+function div()
 {
-background-color:lightGreen;
+var a=parseInt(f1.t1.value);
+var b=parseInt(f1.t2.value);
+var c=a/b;
+document.getElementById("sample").innerHTML="Division : "+c;
 }
 
-tr:nth-child(odd)
-{
-background-color:lightblue;
-}
 
-tr:hover
-{
-background-color:orange;
-font-weight:bold;
-font-size:20px;
-}
-</style>
+</script>
 </head>
 <body>
 
-<table>
+<form name="f1">
+<table align="center">
 
-<caption>Sample Caption</caption>
 <tr>
-<th>S.No</th>
-<th>Name</th>
-<th>Course</th>
-<th>Marks</th>
+<td>Enter Number</td>
+<td><input type="text" name="t1" size=10></td>
 </tr>
 
 <tr>
-<td>101</td>
-<td>AshuTosh</td>
-<td>Java</td>
-<td>95</td>
+<td>Enter Number</td>
+<td><input type="text" name="t2" size=10></td>
 </tr>
 
 <tr>
-<td>102</td>
-<td>Shubham</td>
-<td>Javascript</td>
-<td>95</td>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Ashu</td>
-<td>Java</td>
-<td>95</td>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Ashu</td>
-<td>Java</td>
-<td>95</td>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Ashu</td>
-<td>Java</td>
-<td>95</td>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Ashu</td>
-<td>Java</td>
-<td>95</td>
-</tr>
-
-<tr>
-<td>101</td>
-<td>Ashu</td>
-<td>Java</td>
-<td>95</td>
+<td colspan=2 align="center">
+<input type="button" name="b1" value="Addition" onclick="add();">
+<input type="button" name="b2" value="Substion" onclick="sub();"><br><br>
+<input type="button" name="b3" value="Multiplition" onclick="mul();">
+<input type="button" name="b4" value="Divisiion" onclick="div();">
+</td>
 </tr>
 
 </table>
-
+</form>
+<div id="sample" style="text-align:center; font-size:28px;color:blue">
 </body>
 </html>
