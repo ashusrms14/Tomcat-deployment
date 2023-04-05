@@ -7,7 +7,7 @@ job('First_maven_project_via_DSL') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package','Tomcat-deployment-calculator/pom.xml')
+        maven('clean package','Tomcat-deployment-calculator/')
     }
    // publishers {
    //     archiveArtifacts('**/*.war')
